@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html window-icon="icon.ico" lang="ru" resizeable window-frame="transparent">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <title>Cryptocurrency</title>
+</head>
+<style>
+	html {
+		background-color: transparent;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		height: 60px;
+		font-size: 32px;
+		background: rgba(191,191,191,.5);
+		color: rgb(127,0,0);
+		text-align: center;
+        text-shadow: inset -1px -1px 5px white, 1px 1px 5px gray;
+        box-shadow: inset 1px 1px 5px white, inset -1px -1px 5px black;
+        border-radius: 5px;
+	}
+	#currency {
+		display: block;
+		height: 40px;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		border-bottom: 1px solid rgba(223,223,223,.5);
+		cursor: move;
+	}
+	#options {
+		border-top: 1px solid rgba(31,31,31,.5);
+		font-size: 14px;
+		height: 20px;
+		width: 100%;
+		cursor: pointer;
+	}
+	#exchange {
+		float: left;
+		padding-left: 5px;
+		color: rgb(0,127,0);
+	}
+	#pair {
+		float: right;
+		padding-right: 5px;
+		color: rgb(0,0,127);
+	}
+</style>
+<body role="window-body">
+	<span id="currency" role="window-caption"></span>
+	<div id="options">
+		<span id="exchange"></span>
+		<span id="pair"></span>
+	</div>
+</body>
+<script type="text/tiscript" src="script.tis"></script>
+</html>

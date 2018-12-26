@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html window-icon="icon.ico" lang="ru" role="window-caption" resizeable window-frame="transparent">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Управление</title>
+</head>
+<style>
+	html {
+		background-color: rgba(223,223,255,.7);
+		border: 1px solid rgba(0,0,0,.5);
+        border-radius: 3px;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+	}
+	header {
+		color: rgb(31,31,63);
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+	footer {
+		position:absolute;
+		bottom: 10px;
+		right: 10px;
+	}
+	#ok {
+		display: inline-block;
+		color: rgb(0,127,0);
+		font-weight: 600;
+	}
+	#apply {
+		display: inline-block;
+		color: rgb(63,63,127);
+		font-weight: 600;
+	}
+	#reset {
+		display: inline-block;
+		color: rgb(95,95,0);
+	}
+	#close {
+		display: inline-block;
+		color: rgb(31,31,31);
+	}
+	#exit {
+		display: inline-block;
+		color: rgb(127,0,0);
+	}
+	select {
+		width: 100px;
+		margin-left: 1em;
+	}
+	input[type="checkbox"] {
+		padding-left: 2em;
+	}
+</style>
+<body role="window-body">
+	<header> Настройки </header>
+	<main>
+		<p></p>
+		<label role="window-caption">Выбор биржи:</label>
+		<select id="exchange">
+			<option selected>выбрать</option>
+			<option>Bitfinex</option>
+		</select>
+		<p></p>
+		<label role="window-caption">Выбор криптопары:</label>
+		<select id="pair">
+			<option selected>выбрать</option>
+			<option>BTCUSDT</option>
+		</select>
+		<p></p>
+		<label role="window-caption">Включить звуковое оповещение <input id="sounds" type="checkbox"></label>
+	</main>
+	<footer>
+		<button id="ok"> ОК </button>
+		<button id="apply">Применить</button>
+		<button id="reset">Сброс</button>
+		<button id="close">Закрыть</button>
+		<button id="exit">Выйти</button>
+	</footer>
+</body>
+</html>
